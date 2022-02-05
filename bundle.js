@@ -60,6 +60,7 @@
         addNewNote(note) {
           this.notesModel.addNote(note);
           this.notesApi.createNote(note);
+          this.displayNotes();
         }
       };
       module.exports = NotesView2;

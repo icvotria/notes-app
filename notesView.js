@@ -31,6 +31,7 @@ class NotesView{
   addNewNote(note) {
     this.notesModel.addNote(note);
     this.notesApi.createNote(note);
+    this.displayNotes();
   }
 }
 
